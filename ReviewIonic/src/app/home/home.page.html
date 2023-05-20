@@ -1,0 +1,166 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ 
+  <h4>Entrada de dados</h4>
+  <ion-item>
+    <ion-label position="floating">Your name dude
+    </ion-label>
+    <ion-input clearInput placeholder="Type your name"></ion-input>
+  </ion-item>
+
+  <ion-input
+  type="email"
+  fill="solid"
+  label="Email"
+  labelPlacement="floating"
+  helperText="Enter a valid email"
+  errorText="Invalid email"
+  ngModel 
+  email
+></ion-input>
+
+<ion-item class="input" >
+  <ion-label position="floating">
+    Insira seu telefone
+  </ion-label>
+  <ion-input class="input" type="tel" placeholder="888-888-8888"></ion-input>
+</ion-item>
+
+  <h4>Cartões</h4>
+  
+  <!--cartões com listas-->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        List of candyes
+      </ion-card-title>
+    </ion-card-header>
+    <ion-item class="item-card" href="https://google.com.br">
+      <ion-icon slot="start" name="star"></ion-icon>
+      <ion-label>1: Brigadeiro</ion-label>
+    </ion-item>
+
+    <ion-item class="item-card">
+      <ion-icon slot="start" name="airplane"></ion-icon>
+      <ion-label>2: Morango</ion-label>
+    </ion-item>
+
+    <ion-item class="item-card">
+      <ion-label>3: Maracujá</ion-label>
+      <ion-icon slot="start" name="add"></ion-icon>
+    </ion-item>
+  </ion-card>
+
+
+<!--Listas com avatar-->
+  <ion-list>
+    <ion-item>
+      <ion-avatar>
+        <img src="" alt="">
+      </ion-avatar>
+       <ion-label>
+           Money
+       </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!--Listas utilizando slides-->
+  <h4>Listas com slides</h4>
+  <ion-list>
+    <ion-item-sliding>
+
+      <ion-item>
+        <ion-label>Jean Carlos</ion-label>
+      </ion-item>
+
+      <ion-item-options side="start">
+        <ion-item-option color="success"><ion-icon slot="start" name="hammer-outline"></ion-icon>Alterar</ion-item-option>
+        <ion-item-option color="danger"><ion-icon slot="start" name="close-outline"></ion-icon>Excluir</ion-item-option>
+      </ion-item-options>
+
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+
+      <ion-item>
+        <ion-label>Jonatas Leandro</ion-label>
+      </ion-item>
+
+      <ion-item-options side="start">
+        <ion-item-option color="success"><ion-icon slot="start" name="hammer-outline"></ion-icon>Alterar</ion-item-option>
+        <ion-item-option color="danger"><ion-icon slot="start" name="close-outline"></ion-icon>Excluir</ion-item-option>
+      </ion-item-options>
+
+    </ion-item-sliding>
+  </ion-list>
+
+
+  <!--Cartões com imagens-->
+  <ion-card color="warning">
+    <ion-img src="https://source.unsplash.com/random/800x600"></ion-img>
+   <ion-card-header>
+    <ion-card-title>Aviso</ion-card-title>
+    <ion-card-subtitle>Leia com atenção</ion-card-subtitle>
+   </ion-card-header>
+   <ion-card-content>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti tempora voluptate esse quod maiores nam eius dignissimos molestiae debitis quasi. Dolor atque incidunt laborum dolore nulla at corporis impedit cum.
+   </ion-card-content>
+  </ion-card>
+
+
+  <!--Botões-->
+  <ion-button href="https://www.youtube.com/" target="_blank">click on me</ion-button>
+
+
+  <h3>colors</h3>
+  <ion-button color="secondary">hey</ion-button>
+  <ion-button color="tertiary">ola</ion-button>
+  
+  <h3>Expandido</h3>
+  <ion-button expand="full">full</ion-button>
+  <ion-button expand="block">block</ion-button>
+
+  <h3>Arredondado</h3>
+  <ion-button shape="round">Arredondado</ion-button>
+
+  <h3>Preenchimento</h3>
+  <ion-button fill="outline" color="warning" expand="block" shape="round" id="btn10">Login</ion-button>
+
+  <h3>Icones</h3>
+  <ion-button fill="outline" shape="round" color="warning">
+    Watch
+    <ion-icon slot="end" name="star"></ion-icon>
+  </ion-button>
+
+  <ion-button fill="outline" shape="round" color="warning">
+    
+    <ion-icon slot="icon-only" name="airplane"></ion-icon>
+  </ion-button>
+
+  <h4>Tamanhos</h4>
+
+  <ion-button size="large">
+    Large
+  </ion-button>
+
+  <ion-button>
+    Padrão
+  </ion-button>
+
+  <ion-button size="small">
+    Small
+  </ion-button>
+
+
+
+
+
+
+</ion-content>

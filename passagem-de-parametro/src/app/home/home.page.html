@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>The Movie</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-item>
+    <ion-label position="floating">Insira o nome do filme</ion-label>
+    <ion-input placeholder="Ex: The Godfather" [(ngModel)]="nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Insira o ano de lançamento</ion-label>
+    <ion-input placeholder="Ex: 1972"  [(ngModel)]="data"></ion-input>
+  </ion-item>
+
+  <ion-button color="success" expand="block" (click)="OpenPage2()">
+    Cadastrar
+    <ion-icon name="caret-forward-circle-outline"></ion-icon>
+  </ion-button>
+
+</ion-content>
